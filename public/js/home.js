@@ -1,3 +1,5 @@
+// fsLightbox.props.type = "image";
+
 document.addEventListener("DOMContentLoaded", () => {
 	// Get all "navbar-burger" elements
 	const $navbarBurgers = Array.prototype.slice.call(
@@ -18,4 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			$target.classList.toggle("is-active");
 		});
 	});
+});
+
+$(".whatsapp").floatingWhatsApp({
+	phone: "081287624008",
+	popupMessage:
+		"Anda dapat mengirim pesan melalui whatsapp ini untuk konsultasi.",
+	showPopup: true,
+	zIndex: 999,
+	size: "60px",
 });
